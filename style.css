@@ -375,3 +375,58 @@ body {
 .footer-secondary {
   color: #555555;
 }
+
+@media (max-width: 768px) {
+  /* 1. Menyesuaikan Padding Halaman agar tidak terlalu mepet di HP */
+  .section-padding {
+    padding: 60px 15px;
+  }
+
+  /* 2. Mengubah Menu Navbar menjadi kompak di HP */
+  .navbar {
+    flex-direction: column;
+    gap: 15px;
+    padding: 15px 20px;
+  }
+
+  .nav-links {
+    justify-content: center;
+    width: 100%;
+    padding: 0;
+  }
+
+  .nav-links li {
+    margin: 0 10px;
+  }
+
+  .nav-links a {
+    font-size: 0.8rem;
+  }
+
+  /* 3. Menyesuaikan Ukuran Font Judul Utama di HP */
+  .hero-content h1 {
+    font-size: 2.2rem;
+  }
+
+  .motto {
+    font-size: 0.95rem;
+  }
+
+  /* 4. Menyesuaikan Grid Karya dan Gallery menjadi 1 kolom ke bawah di HP */
+  .portfolio-grid,
+  .gallery-grid {
+    grid-template-columns: 1fr;
+    gap: 15px;
+  }
+
+  /* 5. Mengurangi Jarak Antar Ikon Kontak di HP */
+  .contact-container {
+    gap: 20px;
+  }
+
+  .contact-icon {
+    width: 55px;
+    height: 55px;
+    font-size: 1.4rem;
+  }
+}
