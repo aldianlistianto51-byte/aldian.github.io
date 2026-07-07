@@ -1,0 +1,377 @@
+/* RESET & BERSIH-BERSIH */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  scroll-behavior: smooth;
+}
+
+/* TEMA GELAP UTAMA */
+body {
+  background-color: #0b0c10;
+  color: #c5c6c7;
+}
+
+.section-padding {
+  padding: 100px 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.bg-dark-accent {
+  background-color: #11141a;
+}
+
+.section-title {
+  text-align: center;
+  font-size: 2.5rem;
+  color: #ffffff;
+  margin-bottom: 50px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+/* NAVBAR MODERN (Blur Effect) */
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: rgba(11, 12, 16, 0.85);
+  backdrop-filter: blur(10px);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 50px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+  z-index: 1000;
+}
+
+.nav-logo {
+  font-size: 1.3rem;
+  font-weight: 800;
+  color: #ffffff;
+  letter-spacing: 1px;
+}
+
+.nav-logo span {
+  color: #45f3ff;
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+}
+
+.nav-links li {
+  margin-left: 30px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #aaaaaa;
+  font-weight: 500;
+  font-size: 0.95rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: #45f3ff;
+}
+
+/* HERO SECTION MODERN */
+.hero-section {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: radial-gradient(circle at center, #1f2833 0%, #0b0c10 100%);
+  text-align: center;
+  padding-top: 80px;
+}
+
+.image-border {
+  display: inline-block;
+  padding: 6px;
+  background: linear-gradient(45deg, #45f3ff, #1f2833);
+  border-radius: 50%;
+  margin-bottom: 25px;
+}
+
+.hero-image {
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  object-fit: cover;
+  display: block;
+}
+
+.hero-content h1 {
+  font-size: 3.5rem;
+  color: #ffffff;
+  margin-bottom: 15px;
+  font-weight: 800;
+}
+
+.highlight {
+  color: #45f3ff;
+  text-shadow: 0 0 20px rgba(69, 243, 255, 0.2);
+}
+
+.motto {
+  font-size: 1.1rem;
+  color: #8f9499;
+  margin-bottom: 40px;
+  letter-spacing: 0.5px;
+}
+
+.btn-primary {
+  display: inline-block;
+  padding: 14px 35px;
+  background-color: transparent;
+  color: #45f3ff;
+  border: 2px solid #45f3ff;
+  text-decoration: none;
+  border-radius: 4px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  font-size: 0.85rem;
+  transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+  background-color: #45f3ff;
+  color: #0b0c10;
+  box-shadow: 0 0 25px rgba(69, 243, 255, 0.4);
+  transform: translateY(-2px);
+}
+
+/* ABOUT ME STYLING */
+.about-container {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.about-card {
+  background: #1f2833;
+  padding: 30px;
+  border-radius: 6px;
+  border: 1px solid rgba(255, 255, 255, 0.03);
+}
+
+.about-card h3 {
+  color: #ffffff;
+  margin-bottom: 15px;
+  font-size: 1.3rem;
+}
+
+.about-bio p {
+  line-height: 1.6;
+  margin-bottom: 15px;
+}
+
+.about-education ul {
+  list-style: none;
+}
+
+.about-education li {
+  margin-bottom: 10px;
+  position: relative;
+  padding-left: 20px;
+}
+
+.about-education li::before {
+  content: "■";
+  position: absolute;
+  left: 0;
+  color: #45f3ff;
+}
+
+.skill-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.skill-tags span {
+  background-color: rgba(69, 243, 255, 0.05);
+  color: #45f3ff;
+  border: 1px solid rgba(69, 243, 255, 0.2);
+  padding: 6px 16px;
+  border-radius: 4px;
+  font-size: 0.85rem;
+}
+
+/* PORTFOLIO GRID */
+.portfolio-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+}
+
+.portfolio-card {
+  background: #11141a;
+  border-radius: 6px;
+  overflow: hidden;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+.card-img-wrapper {
+  overflow: hidden;
+  height: 220px;
+}
+
+.portfolio-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.card-body {
+  padding: 25px;
+}
+
+.card-body h3 {
+  color: #ffffff;
+  margin-bottom: 10px;
+  font-size: 1.2rem;
+}
+
+.card-body p {
+  font-size: 0.9rem;
+  line-height: 1.5;
+  color: #8f9499;
+}
+
+.portfolio-card:hover {
+  transform: translateY(-8px);
+  border-color: #45f3ff;
+  box-shadow: 0 10px 30px rgba(69, 243, 255, 0.1);
+}
+
+.portfolio-card:hover img {
+  transform: scale(1.05);
+}
+
+/* GALLERY STYLING (Grid + Flexbox) */
+/* GALLERY STYLING (Pembaruan: Lebih Rapi, Simetris, & Estetik) */
+.gallery-grid {
+  display: grid;
+  /* Membuat 4 kolom sama rata pada layar desktop (minmax memastikan responsif) */
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px; /* Jarak antar foto dibuat lebih lega dan konsisten */
+  padding: 10px 0;
+}
+
+.gallery-item {
+  display: flex; /* FLEXBOX: Memastikan pembungkus gambar fleksibel */
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  border-radius: 12px; /* Sudut melengkung modern */
+  height: 250px; /* Menyamakan tinggi semua kotak agar simetris (Aspek Rasio 1:1 / Square) */
+  background-color: #1f2833;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Bayangan soft agar gambar terlihat "hidup" */
+  transition:
+    transform 0.4s cubic-bezier(0.165, 0.84, 0.44, 1),
+    box-shadow 0.4s ease,
+    border-color 0.4s ease; /* Transisi transisi multi-efek */
+}
+
+.gallery-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Memotong gambar secara proporsional agar tidak gepeng/stretch */
+  filter: grayscale(30%) brightness(0.9); /* Efek warna sinematik gelap di awal */
+  transition:
+    transform 0.6s cubic-bezier(0.165, 0.84, 0.44, 1),
+    filter 0.4s ease;
+}
+
+/* INTERAKSI HOVER: Saat cursor mendekati foto */
+.gallery-item:hover {
+  transform: translateY(-5px); /* Kotak foto naik sedikit */
+  border-color: #45f3ff; /* Garis tepi menyala warna neon */
+  box-shadow: 0 15px 30px rgba(69, 243, 255, 0.2); /* Bayangan menyala biru neon lembut */
+}
+
+.gallery-item:hover img {
+  transform: scale(1.05); /* Gambar nge-zoom halus di dalam bingkai */
+  filter: grayscale(0%) brightness(1); /* Warna asli gambar keluar sepenuhnya */
+}
+/* STYLING CONTACT BARU (Ikon Bulat Logo Asli) */
+.contact-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px; /* Jarak antar lingkaran logo */
+}
+
+.contact-icon {
+  display: flex; /* FLEXBOX: Memposisikan lambang tepat di tengah lingkaran */
+  justify-content: center;
+  align-items: center;
+  width: 70px;
+  height: 70px;
+  border-radius: 50%; /* Membuat lingkaran sempurna */
+  background-color: #1f2833; /* Warna dasar abu-abu gelap */
+  color: #ffffff;
+  font-size: 1.8rem; /* Ukuran lambang logo di dalam lingkaran */
+  text-decoration: none;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275); /* TRANSISI MEMBAL/BOUNCY */
+}
+
+/* HOVER EFFECT CONTACT: Berubah ke warna brand asli, terangkat, dan ikon sedikit berputar */
+.contact-icon:hover {
+  transform: translateY(-8px) rotate(360deg); /* TRANSISI BERPUTAR */
+  color: #ffffff;
+}
+
+/* Warna Hover Khusus masing-masing platform */
+.contact-icon.email:hover {
+  background-color: #ea4335; /* Merah Google */
+  box-shadow: 0 0 20px rgba(234, 67, 53, 0.4);
+}
+
+.contact-icon.instagram:hover {
+  background: linear-gradient(
+    45deg,
+    #f09433 0%,
+    #e6683c 25%,
+    #dc2743 50%,
+    #cc2366 75%,
+    #bc1888 100%
+  ); /* Gradasi asli Instagram */
+  box-shadow: 0 0 20px rgba(220, 39, 67, 0.4);
+}
+
+.contact-icon.whatsapp:hover {
+  background-color: #25d366; /* Hijau WhatsApp */
+  box-shadow: 0 0 20px rgba(37, 211, 102, 0.4);
+}
+
+/* FOOTER */
+.footer {
+  background-color: #050507;
+  text-align: center;
+  padding: 40px 20px;
+  font-size: 0.85rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.02);
+}
+
+.footer-primary {
+  color: #ffffff;
+  margin-bottom: 8px;
+}
+
+.footer-secondary {
+  color: #555555;
+}
